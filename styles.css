@@ -1,0 +1,86 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A modern, clean font */
+  background-image: url('https://www.textures4photoshop.com/tex/thumbs/seamless-money-pattern-background-thumb33.jpg'); /* Set the background image */
+  background-size:cover; /* Ensure the image covers the entire background */
+  background-position:center; /* Center the image */
+  background-attachment: fixed; /* Make the background fixed as the user scrolls */
+  color: #333; /* Dark text for better readability */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center content vertically */
+}
+
+/* Container */
+.container {
+  max-width: 420px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: left;
+  backdrop-filter: blur(5px); /* Slight blur effect on the background */
+}
+
+/* Title */
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Title centered for better visual appeal */
+}
+
+/* Input, Select, Button Styles */
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-sizing: border-box; /* Ensures padding doesn't affect element width */
+  transition: all 0.3s ease; /* Smooth transition on hover/focus */
+}
+
+/* Input and Select focus effect */
+input:focus, select:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue shadow on focus */
+}
+
+/* Button Styles */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Button active effect */
+button:active {
+  background-color: #004085;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
